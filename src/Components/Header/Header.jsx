@@ -7,7 +7,7 @@ import "./styles/Header.css"
 function Header() {
 
   const routes = [
-    {name: "Home", path: "/Home"},
+    {name: "Home", path: "/"},
     {name: "Cart", path: "/Cart"},
     {name: "Profile", path: "/Profile"},
     {name: "About Us", path: "/AboutUs"}

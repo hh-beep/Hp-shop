@@ -8,12 +8,12 @@ import "./index.css"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Hp-shop">
 
       <Header />
 
       <Routes>
-        <Route path="/Home" element={ <p>Home</p> } />
+        <Route path="/" element={ <p>Home</p> } />
         <Route path="/Cart" element={ <p>Cart</p> } />
         <Route path="/Profile" element={ <p>Profile</p> } />
         <Route path="/AboutUs" element={ <p>AboutUs</p> } />
