@@ -7,9 +7,7 @@ function Footer ({ redirect }) {
   return(
     <footer className='footer' >
       <figure className='footer__container' >
-        <img className='footer__container-image' src={Logo} onClick={ () => {
-          redirect()
-        }} />
+        <img className='footer__container-image' src={Logo} />
       </figure>
       <h1 className='footer__copy' >&copy; Hp shop</h1>
     </footer>

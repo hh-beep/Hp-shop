@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import Logo from "../../images/logo.png"
 import "./styles/Header.css"
 
-function Header({ redirect }) {
+function Header() {
 
   const routes = [
-    {name: "Home", path: "/"},
+    {name: "Home", path: "/Home"},
     {name: "Cart", path: "/Cart"},
     {name: "Profile", path: "/Profile"},
     {name: "About Us", path: "/AboutUs"}
@@ -17,9 +17,7 @@ function Header({ redirect }) {
     <header className="header" >
 
     <figure className="header__container">
-      <img className="header__container-image" src={Logo} onClick={ () => {
-        redirect()
-      }} />
+      <img className="header__container-image" src={Logo} />
     </figure>
 
       <ul className="header__list" >
