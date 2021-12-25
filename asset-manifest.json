@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Hp-shop/static/css/main.353ce1a5.css",
+    "main.js": "/Hp-shop/static/js/main.423bcae4.js",
+    "static/js/787.404b01ad.chunk.js": "/Hp-shop/static/js/787.404b01ad.chunk.js",
+    "static/media/logo.png": "/Hp-shop/static/media/logo.ef57deac897b3deed1d3.png",
+    "index.html": "/Hp-shop/index.html",
+    "main.353ce1a5.css.map": "/Hp-shop/static/css/main.353ce1a5.css.map",
+    "main.423bcae4.js.map": "/Hp-shop/static/js/main.423bcae4.js.map",
+    "787.404b01ad.chunk.js.map": "/Hp-shop/static/js/787.404b01ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.353ce1a5.css",
+    "static/js/main.423bcae4.js"
+  ]
+}
