@@ -1,0 +1,73 @@
+//Palettes 
+$black: #232931;
+$dark-grey: #393E46;
+$light-blue: #00B9C2;
+$whitesmoke: #EEEEEE;
+
+@mixin CellScreen {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+.header {
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+  border-bottom: 2px solid $light-blue;
+  box-shadow: 2px 2px 5px $light-blue;
+  flex-wrap: wrap;
+
+  &__container {
+    width: 30%;
+    text-align: center;
+
+    &-image:hover {
+      cursor: pointer;
+    }
+    @include CellScreen() {
+      width: 80%;
+    }
+  }
+  &__list {
+    list-style: none;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .item {
+      transition: 200ms all;
+      padding: 0.5rem;
+
+      &__link {
+        color: $whitesmoke;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: 200ms all;
+      }
+      &:hover {
+        border-bottom: 1px solid $light-blue;
+        cursor: pointer;
+
+        a.item__link {
+          color: $light-blue;
+          font-size: 1.35rem;
+        }
+      }
+    }
+    @include CellScreen() {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 60%;
+      
+      .item {
+        width: 100%;
+        border-bottom: 1px solid $whitesmoke;
+        padding: 0.75rem 0.5rem;
+      }
+    }
+  }
+}

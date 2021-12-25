@@ -1,0 +1,49 @@
+//Palettes 
+$black: #232931;
+$dark-grey: #393E46;
+$light-blue: #00B9C2;
+$whitesmoke: #EEEEEE;
+
+@mixin CellScreen {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+.footer {
+  background-color: $black;
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__container {
+    width: 30%;
+    text-align: center;
+
+    &-image {
+      cursor: pointer;
+    }
+    @include CellScreen() {
+      width: 80%;
+    }
+  }
+  &__copy {
+    width: 35%;
+    text-align: center;
+    font-size: 1.75rem;
+    color: $whitesmoke;
+    transition: 200ms all;
+
+    &:hover {
+      font-size: 2rem;
+      color: $light-blue;
+      cursor: pointer;
+    }
+    @include CellScreen() {
+      margin: 1rem 0;
+    }
+  }
+
+}
