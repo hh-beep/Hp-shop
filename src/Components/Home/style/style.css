@@ -1,0 +1,182 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #393E46;
+  margin: auto;
+}
+.main__tittle {
+  color: #E1E1E1;
+  text-align: center;
+  margin: 1rem 0;
+}
+.main__list {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main__list .item {
+  background-color: #232931;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.main__list .item__tittle {
+  color: #E1E1E1;
+}
+.main__list .item__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+.main__list .item__container .card {
+  background-color: #393E46;
+  width: 30%;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  transition: 200ms all;
+  justify-content: space-around;
+}
+.main__list .item__container .card__image {
+  width: 40%;
+}
+.main__list .item__container .card__info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 200ms all;
+}
+.main__list .item__container .card__info-tittle {
+  font-size: 1.5rem;
+  transition: 200ms all;
+  text-align: center;
+}
+.main__list .item__container .card__info-price {
+  display: none;
+  transition: 200ms all;
+}
+.main__list .item__container .card:hover {
+  box-shadow: 2px 2px 7px #393E46;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.main__list .item__container .card:hover .card__info-tittle {
+  color: #E1E1E1;
+}
+.main__list .item__container .card:hover .card__info-price {
+  display: block;
+  color: #E1E1E1;
+}
+.main__list .item__container .card:active {
+  background-color: #E1E1E1;
+  box-shadow: 2px 2px 7px #E1E1E1;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.main__list .item__container .card:active .card__info-tittle {
+  color: #00B9C2;
+}
+.main__list .item__container .card:active .card__info-price {
+  display: block;
+  color: #00B9C2;
+}
+
+@media (max-width: 900px) {
+  main.main ul.main__list {
+    padding: 0;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+  }
+  main.main ul.main__list .item {
+    border-radius: 0px;
+  }
+  main.main ul.main__list .item__container .card {
+    width: 40%;
+  }
+}
+/*
+.item {
+      transition: 200ms all;
+      background-color: $dark-grey;
+      padding: 2rem 1rem;
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-radius: 5px;
+
+      &__image {
+        width: 10rem;
+      }
+      &__container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: 200ms all;
+
+        &-tittle {
+          text-align: center;
+          word-wrap: break-word;
+          color: $whitesmoke;
+          cursor: pointer;
+          transition: 200ms all;
+        }
+        &-price {
+          text-align: center;
+          font-size: 1.25rem;
+          display: none;
+          cursor: pointer;
+          transition: 200ms all;
+        }
+      }
+      &:hover {
+        background-color: $whitesmoke;          
+        cursor: pointer;
+        box-shadow: 2px 2px 7px $whitesmoke;
+        transform: scale(1.01);
+
+        .item__container {
+          &-tittle {
+            color: $light-blue;
+          }
+          &-price {
+            display: block;
+            color: $light-blue;
+          }
+        }
+
+      }
+      &:active {
+        background-color: $light-blue;
+        box-shadow: 2px 2px 7px $light-blue;
+
+        .item__container {
+          &-tittle {
+            color: $whitesmoke;
+          }
+          &-price {
+            color: $whitesmoke;
+          }
+        }
+      }
+  }
+*/
+
+/*# sourceMappingURL=style.css.map */
