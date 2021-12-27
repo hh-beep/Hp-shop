@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/Hp-shop/static/css/main.67344a48.css",
-    "main.js": "/Hp-shop/static/js/main.e5ff1685.js",
+    "main.css": "/Hp-shop/static/css/main.65ee1ef2.css",
+    "main.js": "/Hp-shop/static/js/main.db6421bb.js",
     "static/js/787.404b01ad.chunk.js": "/Hp-shop/static/js/787.404b01ad.chunk.js",
     "static/media/white-mug.png": "/Hp-shop/static/media/white-mug.de40aff093e897734f67.png",
     "static/media/spoon-mug.png": "/Hp-shop/static/media/spoon-mug.76dcb84ad030c3293cfc.png",
+    "static/media/thermical-cup.png": "/Hp-shop/static/media/thermical-cup.cd8f8a7fb1cfefdcb438.png",
+    "static/media/squeeze-bottle.png": "/Hp-shop/static/media/squeeze-bottle.95b6608b70bc3e17963f.png",
     "static/media/thermal-mug.png": "/Hp-shop/static/media/thermal-mug.91349ec1b88db8fcb0e0.png",
+    "static/media/thermical-bottle.png": "/Hp-shop/static/media/thermical-bottle.99aa64d8adbbdefe835c.png",
     "static/media/logo.png": "/Hp-shop/static/media/logo.ef57deac897b3deed1d3.png",
     "static/media/colored-mug.png": "/Hp-shop/static/media/colored-mug.4aac3de3942d29a30cc0.png",
     "index.html": "/Hp-shop/index.html",
-    "main.67344a48.css.map": "/Hp-shop/static/css/main.67344a48.css.map",
-    "main.e5ff1685.js.map": "/Hp-shop/static/js/main.e5ff1685.js.map",
+    "main.65ee1ef2.css.map": "/Hp-shop/static/css/main.65ee1ef2.css.map",
+    "main.db6421bb.js.map": "/Hp-shop/static/js/main.db6421bb.js.map",
     "787.404b01ad.chunk.js.map": "/Hp-shop/static/js/787.404b01ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67344a48.css",
-    "static/js/main.e5ff1685.js"
+    "static/css/main.65ee1ef2.css",
+    "static/js/main.db6421bb.js"
   ]
 }
