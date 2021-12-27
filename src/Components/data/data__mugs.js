@@ -9,7 +9,7 @@ const data__mug = [
     price: 23.99,
     image: whiteMug,
     tittle: "Caneca Branca"
-
+    
   },
 
   {

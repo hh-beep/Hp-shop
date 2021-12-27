@@ -9,6 +9,11 @@ $whitesmoke: #E1E1E1;
     @content;
   }
 }
+@mixin SmallScreen {
+  @media (min-width: 900px) and (max-width: 1200px)  {
+    @content
+  }
+}
 
 .main {
   display: flex;
@@ -80,10 +85,12 @@ $whitesmoke: #E1E1E1;
               font-size: 1.5rem;
               transition: 200ms all;
               text-align: center;
+              color: black;
             }
             &-price {
               display: none;
               transition: 200ms all;
+              color: black;
             }
           }
           &:hover { 
@@ -136,6 +143,31 @@ $whitesmoke: #E1E1E1;
         &__container {
           .card {
             width: 75%;
+
+            &__image {
+              height: 15rem;
+              width: 45%;
+            }
+            &__info {
+              &-tittle, &-price {
+                color: black;
+              }
+            }
+            &:hover {
+              box-shadow: none;
+              .card__info {
+                &-tittle, &-price {
+                  color: black;
+                }
+              }
+            }
+            &:active {
+              .card__info {
+                &-tittle, &-price {
+                  color: $light-blue;
+                }
+              }
+            }
           }
         }
       }
@@ -143,70 +175,17 @@ $whitesmoke: #E1E1E1;
   }
 
 }
-/*
-.item {
-      transition: 200ms all;
-      background-color: $dark-grey;
-      padding: 2rem 1rem;
-      width: 20%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      border-radius: 5px;
-
-      &__image {
-        width: 10rem;
-      }
-      &__container {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        transition: 200ms all;
-
-        &-tittle {
-          text-align: center;
-          word-wrap: break-word;
-          color: $whitesmoke;
-          cursor: pointer;
-          transition: 200ms all;
-        }
-        &-price {
-          text-align: center;
-          font-size: 1.25rem;
-          display: none;
-          cursor: pointer;
-          transition: 200ms all;
-        }
-      }
-      &:hover {
-        background-color: $whitesmoke;          
-        cursor: pointer;
-        box-shadow: 2px 2px 7px $whitesmoke;
-        transform: scale(1.01);
-
-        .item__container {
-          &-tittle {
-            color: $light-blue;
-          }
-          &-price {
-            display: block;
-            color: $light-blue;
-          }
-        }
-
-      }
-      &:active {
-        background-color: $light-blue;
-        box-shadow: 2px 2px 7px $light-blue;
-
-        .item__container {
-          &-tittle {
-            color: $whitesmoke;
-          }
-          &-price {
-            color: $whitesmoke;
+@include SmallScreen() {
+  .main {
+    &__list{
+      padding: 0;
+      .item {
+        &__container {
+          .card {
+            width: 40%;
           }
         }
       }
+    }
   }
-*/
+}

@@ -67,10 +67,12 @@
   font-size: 1.5rem;
   transition: 200ms all;
   text-align: center;
+  color: black;
 }
 .main__list .item__container .card__info-price {
   display: none;
   transition: 200ms all;
+  color: black;
 }
 .main__list .item__container .card:hover {
   box-shadow: 2px 2px 7px #393E46;
@@ -110,73 +112,30 @@
   main.main ul.main__list .item__container .card {
     width: 75%;
   }
-}
-/*
-.item {
-      transition: 200ms all;
-      background-color: $dark-grey;
-      padding: 2rem 1rem;
-      width: 20%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      border-radius: 5px;
-
-      &__image {
-        width: 10rem;
-      }
-      &__container {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        transition: 200ms all;
-
-        &-tittle {
-          text-align: center;
-          word-wrap: break-word;
-          color: $whitesmoke;
-          cursor: pointer;
-          transition: 200ms all;
-        }
-        &-price {
-          text-align: center;
-          font-size: 1.25rem;
-          display: none;
-          cursor: pointer;
-          transition: 200ms all;
-        }
-      }
-      &:hover {
-        background-color: $whitesmoke;          
-        cursor: pointer;
-        box-shadow: 2px 2px 7px $whitesmoke;
-        transform: scale(1.01);
-
-        .item__container {
-          &-tittle {
-            color: $light-blue;
-          }
-          &-price {
-            display: block;
-            color: $light-blue;
-          }
-        }
-
-      }
-      &:active {
-        background-color: $light-blue;
-        box-shadow: 2px 2px 7px $light-blue;
-
-        .item__container {
-          &-tittle {
-            color: $whitesmoke;
-          }
-          &-price {
-            color: $whitesmoke;
-          }
-        }
-      }
+  main.main ul.main__list .item__container .card__image {
+    height: 15rem;
+    width: 45%;
   }
-*/
+  main.main ul.main__list .item__container .card__info-tittle, main.main ul.main__list .item__container .card__info-price {
+    color: black;
+  }
+  main.main ul.main__list .item__container .card:hover {
+    box-shadow: none;
+  }
+  main.main ul.main__list .item__container .card:hover .card__info-tittle, main.main ul.main__list .item__container .card:hover .card__info-price {
+    color: black;
+  }
+  main.main ul.main__list .item__container .card:active .card__info-tittle, main.main ul.main__list .item__container .card:active .card__info-price {
+    color: #00B9C2;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .main__list {
+    padding: 0;
+  }
+  .main__list .item__container .card {
+    width: 40%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
