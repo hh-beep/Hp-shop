@@ -112,10 +112,6 @@
   main.main ul.main__list .item__container .card {
     width: 75%;
   }
-  main.main ul.main__list .item__container .card__image {
-    height: 15rem;
-    width: 45%;
-  }
   main.main ul.main__list .item__container .card__info-tittle, main.main ul.main__list .item__container .card__info-price {
     color: black;
   }
