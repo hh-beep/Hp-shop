@@ -21,12 +21,17 @@ $whitesmoke: #EEEEEE;
   &__container {
     width: 30%;
     text-align: center;
+    margin: 1rem 0;
 
     &-image {
       cursor: pointer;
     }
     @include CellScreen() {
       width: 80%;
+
+      &-image {
+        width: 40%;
+      }
     }
   }
   &__copy {

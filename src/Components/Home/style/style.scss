@@ -143,21 +143,27 @@ $whitesmoke: #E1E1E1;
         &__container {
           .card {
             width: 75%;
-
-            &__info {
+            
+          &__info {
               &-tittle, &-price {
                 color: black;
+              }
+              &-price {
+                display: block;
               }
             }
             &:hover {
               box-shadow: none;
               .card__info {
                 &-tittle, &-price {
-                  color: black;
+                  color: $light-blue;
                 }
               }
             }
             &:active {
+              box-shadow: none;
+              background-color: $dark-grey;
+              transform: scale(1.02);
               .card__info {
                 &-tittle, &-price {
                   color: $light-blue;

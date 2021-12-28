@@ -115,11 +115,19 @@
   main.main ul.main__list .item__container .card__info-tittle, main.main ul.main__list .item__container .card__info-price {
     color: black;
   }
+  main.main ul.main__list .item__container .card__info-price {
+    display: block;
+  }
   main.main ul.main__list .item__container .card:hover {
     box-shadow: none;
   }
   main.main ul.main__list .item__container .card:hover .card__info-tittle, main.main ul.main__list .item__container .card:hover .card__info-price {
-    color: black;
+    color: #00B9C2;
+  }
+  main.main ul.main__list .item__container .card:active {
+    box-shadow: none;
+    background-color: #393E46;
+    transform: scale(1.02);
   }
   main.main ul.main__list .item__container .card:active .card__info-tittle, main.main ul.main__list .item__container .card:active .card__info-price {
     color: #00B9C2;

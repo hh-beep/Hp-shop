@@ -9,6 +9,7 @@
 .footer__container {
   width: 30%;
   text-align: center;
+  margin: 1rem 0;
 }
 .footer__container-image {
   cursor: pointer;
@@ -16,6 +17,9 @@
 @media (max-width: 900px) {
   .footer__container {
     width: 80%;
+  }
+  .footer__container-image {
+    width: 40%;
   }
 }
 .footer__copy {

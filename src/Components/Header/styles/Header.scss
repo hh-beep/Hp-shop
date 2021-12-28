@@ -2,7 +2,7 @@
 $black: #232931;
 $dark-grey: #393E46;
 $light-blue: #00B9C2;
-$whitesmoke: #EEEEEE;
+$whitesmoke: #E1E1E1;
 
 @mixin CellScreen {
   @media (max-width: 900px) {
@@ -29,6 +29,10 @@ $whitesmoke: #EEEEEE;
     }
     @include CellScreen() {
       width: 80%;
+
+      &-image {
+        width: 40%;
+      }
     }
   }
   &__list {
@@ -62,9 +66,10 @@ $whitesmoke: #EEEEEE;
       flex-direction: column;
       align-items: flex-start;
       width: 60%;
-      
+      margin-top: 1rem;
+
       .item {
-        width: 100%;
+        width: 95%;
         border-bottom: 1px solid $whitesmoke;
         padding: 0.75rem 0.5rem;
       }
