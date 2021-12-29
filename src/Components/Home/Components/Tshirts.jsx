@@ -1,27 +1,27 @@
 import React from 'react';
 
-import returnDbottle from '../../data/data__bottle';
+import returnDtshirts from "../../data/data__tshirts.js"
 
-function Bottles({ set, setCat }) {
-
-  const bottles = returnDbottle()
+function Tshirt({ set, setCat }) {
+  
+  const tshirts = returnDtshirts()
   
   return(
     <li className='item' >
-      <h1 className='item__tittle' >Garrafas</h1>
+      <h1 className='item__tittle' >Camisas</h1>
       <section className='item__container' >
-        {bottles.map( (item, key) => {
+        {tshirts.map( (item, key) => {
           return(
             <figure className='card' key={key} onClick={() => {
 
               set(item)
 
-              setCat(bottles)
+              setCat(tshirts)
 
               window.location.hash = "#/Hp-shop/ChooseItem/"
 
             }} >
-              <img className='card__image' src={item.image} />
+              <img className='card__image' src={ item.image } />
               <section className='card__info' >
                 <h1 className='card__info-tittle' >{ item.tittle }</h1>
                 <p className='card__info-price' >{ item.price }</p>
@@ -34,4 +34,4 @@ function Bottles({ set, setCat }) {
   )
 }
 
-export default Bottles;
+export default Tshirt;

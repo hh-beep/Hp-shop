@@ -79,25 +79,16 @@
   cursor: pointer;
   transform: scale(1.02);
 }
-.main__list .item__container .card:hover .card__info-tittle {
-  color: #E1E1E1;
+.main__list .item__container .card:hover .card__info-tittle, .main__list .item__container .card:hover .card__info-price {
+  color: #00B9C2;
 }
 .main__list .item__container .card:hover .card__info-price {
   display: block;
-  color: #E1E1E1;
 }
 .main__list .item__container .card:active {
-  background-color: #E1E1E1;
-  box-shadow: 2px 2px 7px #E1E1E1;
+  box-shadow: 1px 1px 7px #E1E1E1;
   cursor: pointer;
   transform: scale(1.03);
-}
-.main__list .item__container .card:active .card__info-tittle {
-  color: #00B9C2;
-}
-.main__list .item__container .card:active .card__info-price {
-  display: block;
-  color: #00B9C2;
 }
 
 @media (max-width: 900px) {

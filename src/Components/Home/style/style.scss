@@ -99,30 +99,21 @@ $whitesmoke: #E1E1E1;
             transform: scale(1.02);
 
             .card__info {
-              &-tittle {
-                color: $whitesmoke;
+              &-tittle, &-price {
+                color: $light-blue;
               }
               &-price{
                 display: block;
-                color: $whitesmoke;
               }
             }
           }
           &:active {
-            background-color: $whitesmoke;
-            box-shadow: 2px 2px 7px $whitesmoke;
+            
+            box-shadow: 1px 1px 7px $whitesmoke;
             cursor: pointer;
             transform: scale(1.03);
 
-            .card__info {
-              &-tittle {
-                color: $light-blue;
-              }
-              &-price{
-                display: block;
-                color: $light-blue;
-              }
-            }
+            
           }
         }
       }

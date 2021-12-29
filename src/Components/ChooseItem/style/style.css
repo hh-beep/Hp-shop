@@ -1,0 +1,39 @@
+.Main {
+  background-color: #232931;
+  padding: 2rem 0;
+}
+.Main .card {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #393E46;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.Main .card__figure {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.Main .card__figure-image {
+  width: 20rem;
+}
+.Main .card__info {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Main .card__info-tittle {
+  font-size: 2.25rem;
+  color: #E1E1E1;
+  word-wrap: break-word;
+}
+.Main .card__info-price {
+  font-size: 1.25rem;
+  color: #E1E1E1;
+}
+
+/*# sourceMappingURL=style.css.map */

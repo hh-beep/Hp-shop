@@ -1,0 +1,58 @@
+//Palettes 
+$black: #232931;
+$dark-grey: #393E46;
+$light-blue: #00B9C2;
+$whitesmoke: #E1E1E1;
+
+@mixin CellScreen {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin SmallScreen {
+  @media (min-width: 900px) and (max-width: 1200px)  {
+    @content
+  }
+}
+
+.Main {
+  background-color: $black;
+  padding: 2rem 0;
+
+  .card {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: $dark-grey;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    
+    &__figure{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+
+      &-image {
+        width: 20rem;
+      }
+    }
+    &__info {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &-tittle {
+        font-size: 2.25rem;
+        color: $whitesmoke;
+        word-wrap: break-word;
+      }
+      &-price {
+        font-size: 1.25rem;
+        color: $whitesmoke
+      }
+    }
+  }
+}

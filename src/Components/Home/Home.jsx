@@ -1,11 +1,14 @@
-import React from 'react';
-
 import Mug from './Components/Mugs.jsx';
 import Bottles from "./Components/Bottles.jsx"
+import Tshirt from './Components/Tshirts.jsx';
+import Goblet from './Components/Goblets.jsx';
 
+
+
+import React from 'react';
 import "./style/style.css"
 
-function Home() {
+function Home({ set, setCategory }) {
 
   return(
     <main className='main' >
@@ -14,8 +17,10 @@ function Home() {
 
       <ul className='main__list'>
         
-        <Mug />
-        <Bottles />
+        <Mug set={set} setCat={setCategory} />
+        <Bottles set={set} setCat={setCategory} />
+        <Tshirt set={set} setCat={setCategory} />
+        <Goblet set={set} setCat={setCategory} />
 
       </ul>
     
