@@ -8,8 +8,7 @@ function Header() {
 
   const routes = [
     {name: "Home", path: "/"},
-    //{name: "Cart", path: "/Cart"},
-    {name: "Profile", path: "/Profile"},
+    {name: "Cart", path: "/Cart"},
     {name: "About Us", path: "/AboutUs"}
   ]
 

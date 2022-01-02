@@ -2,10 +2,7 @@ import React from 'react';
 
 import "./style/style.css"
 
-function ChooseItem({ item, category }) {
-
-  console.log(item)
-  console.log(category)
+function ChooseItem({ item, cartItems, setCart }) {
 
   return (
     <main className='Main' >
@@ -18,7 +15,19 @@ function ChooseItem({ item, category }) {
         <section className='card__info'>
           <h1 className='card__info-tittle' >{ item.tittle }</h1>
           <p className='card__info-price' >{ item.price }</p>
-          <button>Encomendar</button>
+
+          <button className='btn' onClick={() => {
+
+            if(cartItems.length === 0) {
+              setCart([item])
+            }
+            else {
+              var addNewItem = cartItems;
+              addNewItem.push(item)
+              setCart(addNewItem)
+            }
+            console.log(cartItems)
+          }} >Adicionar ao Carrinho</button>
         </section>
 
       </section>

@@ -4,14 +4,13 @@ $dark-grey: #393E46;
 $light-blue: #00B9C2;
 $whitesmoke: #E1E1E1;
 
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
 @mixin CellScreen {
   @media (max-width: 900px) {
     @content;
-  }
-}
-@mixin SmallScreen {
-  @media (min-width: 900px) and (max-width: 1200px)  {
-    @content
   }
 }
 
@@ -26,6 +25,7 @@ $whitesmoke: #E1E1E1;
     width: 80%;
     display: flex;
     justify-content: space-around;
+    border-radius: 3px;
     
     &__figure{
       display: flex;
@@ -43,16 +43,62 @@ $whitesmoke: #E1E1E1;
       align-items: center;
       flex-direction: column;
       justify-content: space-around;
+      text-align: center;
 
       &-tittle {
         font-size: 2.25rem;
         color: $whitesmoke;
         word-wrap: break-word;
-      }
+        text-align: center;
+        }
       &-price {
         font-size: 1.25rem;
         color: $whitesmoke
       }
+      .btn {
+
+        border: 1px solid $whitesmoke;
+        color: #fff;
+        box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
+        transition: all 150ms ease-in-out;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: 200ms all;
+
+        &:hover {
+          box-shadow: 0 0 10px 0 transparent inset, 0 0 10px 4px $light-blue;
+          border: 1px solid $light-blue;
+          cursor: pointer;
+          color: $light-blue;
+          transform: scale(1.03);
+        }
+      }
+    }
+  }    
+}
+@include CellScreen() {
+
+  .Main {
+    .card {
+      margin: 3rem 0;
+      width: 100%;
+      flex-direction: column;
+      height: 30rem;
+      align-items: center;
+
+      &__figure {
+        
+        height: 45%;
+
+        &-image {
+          width: 60%;
+        }
+      }
+      &__info {
+        height: 45%;
+      }
     }
   }
+
 }

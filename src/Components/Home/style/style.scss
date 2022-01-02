@@ -9,11 +9,6 @@ $whitesmoke: #E1E1E1;
     @content;
   }
 }
-@mixin SmallScreen {
-  @media (min-width: 900px) and (max-width: 1200px)  {
-    @content
-  }
-}
 
 .main {
   display: flex;
@@ -33,7 +28,6 @@ $whitesmoke: #E1E1E1;
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 1rem;
     justify-content: space-around;
     flex-wrap: wrap;
 
@@ -61,7 +55,7 @@ $whitesmoke: #E1E1E1;
 
         .card {
           background-color: $dark-grey;
-          width: 30%;
+          width: 35%;
           padding: 1rem;
           margin: 1rem;
           display: flex;
@@ -134,7 +128,11 @@ $whitesmoke: #E1E1E1;
         &__container {
           .card {
             width: 75%;
+            flex-direction: column;
+            align-items: center;
+            height: 20rem;
             
+          
           &__info {
               &-tittle, &-price {
                 color: black;
@@ -167,18 +165,4 @@ $whitesmoke: #E1E1E1;
     }
   }
 
-}
-@include SmallScreen() {
-  .main {
-    &__list{
-      padding: 0;
-      .item {
-        &__container {
-          .card {
-            width: 40%;
-          }
-        }
-      }
-    }
-  }
 }

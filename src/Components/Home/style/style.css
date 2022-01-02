@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding: 1rem;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -43,7 +42,7 @@
 }
 .main__list .item__container .card {
   background-color: #393E46;
-  width: 30%;
+  width: 35%;
   padding: 1rem;
   margin: 1rem;
   display: flex;
@@ -102,6 +101,9 @@
   }
   main.main ul.main__list .item__container .card {
     width: 75%;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
   }
   main.main ul.main__list .item__container .card__info-tittle, main.main ul.main__list .item__container .card__info-price {
     color: black;
@@ -122,14 +124,6 @@
   }
   main.main ul.main__list .item__container .card:active .card__info-tittle, main.main ul.main__list .item__container .card:active .card__info-price {
     color: #00B9C2;
-  }
-}
-@media (min-width: 900px) and (max-width: 1200px) {
-  .main__list {
-    padding: 0;
-  }
-  .main__list .item__container .card {
-    width: 40%;
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import returnDmugs from '../../data/data__mugs';
 
-function Mug({ set, setCat }) {
+function Mug({ set }) {
 
   const mugs = returnDmugs()
   
@@ -15,8 +15,6 @@ function Mug({ set, setCat }) {
             <figure className='card' key={key} onClick={() => {
 
               set(item)
-              
-              setCat(mugs)
 
               window.location.hash = "#/Hp-shop/ChooseItem/"
 

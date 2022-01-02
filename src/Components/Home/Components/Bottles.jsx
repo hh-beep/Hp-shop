@@ -2,7 +2,7 @@ import React from 'react';
 
 import returnDbottle from '../../data/data__bottle';
 
-function Bottles({ set, setCat }) {
+function Bottles({ set }) {
 
   const bottles = returnDbottle()
   
@@ -15,8 +15,6 @@ function Bottles({ set, setCat }) {
             <figure className='card' key={key} onClick={() => {
 
               set(item)
-
-              setCat(bottles)
 
               window.location.hash = "#/Hp-shop/ChooseItem/"
 

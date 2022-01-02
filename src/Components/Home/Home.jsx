@@ -8,7 +8,7 @@ import Goblet from './Components/Goblets.jsx';
 import React from 'react';
 import "./style/style.css"
 
-function Home({ set, setCategory }) {
+function Home({ set }) {
 
   return(
     <main className='main' >
@@ -17,10 +17,10 @@ function Home({ set, setCategory }) {
 
       <ul className='main__list'>
         
-        <Mug set={set} setCat={setCategory} />
-        <Bottles set={set} setCat={setCategory} />
-        <Tshirt set={set} setCat={setCategory} />
-        <Goblet set={set} setCat={setCategory} />
+        <Mug set={set} />
+        <Bottles set={set} />
+        <Tshirt set={set} />
+        <Goblet set={set} />
 
       </ul>
     

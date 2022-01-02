@@ -2,7 +2,7 @@ import React from 'react';
 
 import returnDgoblets from "../../data/data__goblets.js"
 
-function Goblet({ set, setCat }) {
+function Goblet({ set }) {
   
   const goblets = returnDgoblets()
   
@@ -15,8 +15,6 @@ function Goblet({ set, setCat }) {
             <figure className='card' key={key} onClick={() => {
 
               set(item)
-
-              setCat(goblets)
 
               window.location.hash = "#/Hp-shop/ChooseItem/"
 

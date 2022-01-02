@@ -1,3 +1,8 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
 .Main {
   background-color: #232931;
   padding: 2rem 0;
@@ -9,6 +14,7 @@
   width: 80%;
   display: flex;
   justify-content: space-around;
+  border-radius: 3px;
 }
 .Main .card__figure {
   display: flex;
@@ -25,15 +31,53 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 }
 .Main .card__info-tittle {
   font-size: 2.25rem;
   color: #E1E1E1;
   word-wrap: break-word;
+  text-align: center;
 }
 .Main .card__info-price {
   font-size: 1.25rem;
   color: #E1E1E1;
+}
+.Main .card__info .btn {
+  border: 1px solid #E1E1E1;
+  color: #fff;
+  box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
+  transition: all 150ms ease-in-out;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 200ms all;
+}
+.Main .card__info .btn:hover {
+  box-shadow: 0 0 10px 0 transparent inset, 0 0 10px 4px #00B9C2;
+  border: 1px solid #00B9C2;
+  cursor: pointer;
+  color: #00B9C2;
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .Main .card {
+    margin: 3rem 0;
+    width: 100%;
+    flex-direction: column;
+    height: 30rem;
+    align-items: center;
+  }
+  .Main .card__figure {
+    height: 45%;
+  }
+  .Main .card__figure-image {
+    width: 60%;
+  }
+  .Main .card__info {
+    height: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

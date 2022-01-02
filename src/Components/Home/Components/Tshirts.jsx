@@ -2,7 +2,7 @@ import React from 'react';
 
 import returnDtshirts from "../../data/data__tshirts.js"
 
-function Tshirt({ set, setCat }) {
+function Tshirt({ set }) {
   
   const tshirts = returnDtshirts()
   
@@ -15,8 +15,6 @@ function Tshirt({ set, setCat }) {
             <figure className='card' key={key} onClick={() => {
 
               set(item)
-
-              setCat(tshirts)
 
               window.location.hash = "#/Hp-shop/ChooseItem/"
 
