@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hp-shop/static/css/main.e7394be2.css",
-    "main.js": "/Hp-shop/static/js/main.d2fd0186.js",
+    "main.css": "/Hp-shop/static/css/main.8b2f2296.css",
+    "main.js": "/Hp-shop/static/js/main.d1920bbc.js",
     "static/js/787.404b01ad.chunk.js": "/Hp-shop/static/js/787.404b01ad.chunk.js",
     "static/media/white-mug.png": "/Hp-shop/static/media/white-mug.de40aff093e897734f67.png",
     "static/media/spoon-mug.png": "/Hp-shop/static/media/spoon-mug.76dcb84ad030c3293cfc.png",
@@ -17,12 +17,12 @@
     "static/media/logo.png": "/Hp-shop/static/media/logo.ef57deac897b3deed1d3.png",
     "static/media/colored-mug.png": "/Hp-shop/static/media/colored-mug.4aac3de3942d29a30cc0.png",
     "index.html": "/Hp-shop/index.html",
-    "main.e7394be2.css.map": "/Hp-shop/static/css/main.e7394be2.css.map",
-    "main.d2fd0186.js.map": "/Hp-shop/static/js/main.d2fd0186.js.map",
+    "main.8b2f2296.css.map": "/Hp-shop/static/css/main.8b2f2296.css.map",
+    "main.d1920bbc.js.map": "/Hp-shop/static/js/main.d1920bbc.js.map",
     "787.404b01ad.chunk.js.map": "/Hp-shop/static/js/787.404b01ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7394be2.css",
-    "static/js/main.d2fd0186.js"
+    "static/css/main.8b2f2296.css",
+    "static/js/main.d1920bbc.js"
   ]
 }
